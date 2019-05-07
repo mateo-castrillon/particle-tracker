@@ -1,1 +1,48 @@
-*pyc
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
+# files and folders of editors
+.vscode
+
+# cache folders
+.cache
+
+# ignore build folders
+build
+
+# python folder to ignore
+__pycache__
+# python files to ignore
+*.pyc
+
+# video folder except for the README
+#*.avi # Due to a performance-related quirk in Git, you can not negate a file that is ignored due to a pattern matching a directory, i.e. we ignore here all files except ny explicitly exlude every file with *.*, but for one
+#!examples/videos/README
+
+
+#Images
+*.jpg
+*.gif
+*.png
+*.svg
+*.ico
+
+#Audio
+*.wav
+*.mp3
+*.wma
+
+#IDE related files
+.classpath
+.project
+
+#Add a comment to this line
+*.settings
+*.idea
+*.metadata
+*.iml
+*.ipr
+
+#documents
+*.ods
+*.xls
+*.xlsx
