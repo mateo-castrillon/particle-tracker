@@ -7,16 +7,18 @@ from collections import deque # this is to create a buffer so the tail of the pa
 
 import inspect
 import os
+import sys
 
 scriptname = inspect.getframeinfo(inspect.currentframe()).filename
 root_dir = os.path.dirname(os.path.abspath(scriptname))
 
-
 #sorted(glob(os.path.join(silh_dir, '*.png')) + glob(os.path.join(silh_dir, '*.jpg')))
-dir = "/home/staff/mo.schulze/python4ia/examples/videos/"
+#dir = "/home/staff/mo.schulze/python4ia/examples/videos/"
+
+video_path = sys.argv[1]
 
 #load video
-cap = cv2.VideoCapture(dir + '50 Hz Belichtungszeit 5000-1.avi')
+cap = cv2.VideoCapture(video_path)
 #determine frames per second of loaded video
 fps = cap.get(cv2.CAP_PROP_FPS)
 #print fps

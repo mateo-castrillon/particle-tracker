@@ -10,13 +10,16 @@ import os
 from imutils import contours
 
 import random
+import sys
 
 
 #name of main directory, video to use and set frames per second
-dir = '/home/jmateo/Documents/optrack'
-video_name = "50 Hz Belichtungszeit 5000-1"
+# dir = '/home/jmateo/Documents/optrack'
+# video_name = "50 Hz Belichtungszeit 5000-1"
 
-cap = cv2.VideoCapture(os.path.join(dir,video_name + '.avi'))
+video_path = sys.argv[1]
+
+cap = cv2.VideoCapture(os.path.join(video_path))
 
 if (cap.isOpened() == False):
     print("Error opening video file, check file location and name")
