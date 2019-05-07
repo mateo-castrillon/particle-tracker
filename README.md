@@ -1,10 +1,22 @@
-# Particle-tracker
+# Particle tracker
 
 Needs opencv with opencv-contrib
 Install conda environment from envs folder
 
+After instaling the conda environment with all the needed packages execute any of the following scripts:
 
-docs construction done by executing following command in the docs folder:
+```python
+python multiple_track video_path
+```
+
+
+```python
+python tracker2 video_path
+```
+
+The ping-pong.py file does the same on a youtube video from the classic ping-pog game.
+
+docs compilation done by executing following command in the docs folder:
 
 ```python
 make html
