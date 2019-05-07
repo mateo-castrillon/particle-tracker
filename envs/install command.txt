@@ -1,0 +1,2 @@
+conda env create -f optrack.yaml -n name
+
