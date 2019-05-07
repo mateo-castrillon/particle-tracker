@@ -1,7 +1,7 @@
 # Particle tracker
 
 Needs opencv with opencv-contrib
-Install conda environment from envs folder
+Install conda environment from envs folder, the file commands.txt contains the right commdan to do so.
 
 After instaling the conda environment with all the needed packages execute any of the following scripts:
 
